@@ -195,10 +195,8 @@ class SteamTradeBot {
     }
 }
 
-// Initialize bot
 const bot = new SteamTradeBot();
 
-// Event listeners
 bot.manager.on('newOffer', (offer) => {
     bot.handleNewOffer(offer);
 });
